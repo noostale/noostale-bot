@@ -13,16 +13,15 @@ TOKEN = '1661754571:AAEZk8muTF08BvbJO09RPUHEfsK_ZzLIElQ'
 # Define a few command handlers. These usually take the two arguments update and
 # context. Error handlers also receive the raised TelegramError object in error.
 def start(update, context):
-    """Send a message when the command /start is issued."""
     update.message.reply_text('Benvenuto nel mio bot. Per ora è completamente inutile.')
 
 def help(update, context):
-    """Send a message when the command /help is issued."""
-    update.message.reply_text('Help!')
+    update.message.reply_text('Hai chiesto aiuto')
 
 def echo(update, context):
-    """Echo the user message."""
-    update.message.reply_text(update.message.text)
+    update.message.reply_text("TRE VOLTE MINISTRO")
+
+#update.message.text
 
 def error(update, context):
     """Log Errors caused by Updates."""
